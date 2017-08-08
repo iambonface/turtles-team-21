@@ -9,6 +9,210 @@ version 1.0
   height: 100vh;
 }
 
+/*-----------top page design------*/
+.flex-container {
+    display: flex;
+    margin: 20px auto;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    color: #ccc;
+}
+
+
+
+/*
+  ========================================
+  Flex item widths
+  ========================================
+*/
+.links-menu {
+    width: 25%;
+}
+.weather-container {
+    width: 35%;
+}
+.weather-container > .menu-button {
+    text-align: right;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ccc;
+}
+.toggle {
+    width: 30%;
+    text-align: center;
+}
+
+
+/*
+  ========================================
+  Drop down menu styles
+  ========================================
+*/
+.drop-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333745;
+    padding: 10px;
+    align-items: center;
+    transition: max-height 0.4s, opacity 0.3s;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 8px;
+
+
+}
+
+.drop-menu > .menu-button {
+  height: 100%;
+  transition: transform .4s;
+  transform: translateY(-500%);
+  /* Makes the menu buttons slide upwards on close */
+}
+
+
+.dropdown-wrapper:hover .drop-menu{
+      max-height: 300px;
+      opacity: 1;
+    /*makes dropdown menu visible on hover*/
+}
+.dropdown-wrapper:hover > .drop-menu .menu-button {
+  transform: translateY(0%);
+    /*makes dropdown menu buttons visible on hover*/
+}
+
+.weather-submenu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+}
+.links-menu > .drop-menu > .menu-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1.2em;
+}
+.links-menu > .drop-menu > .menu-button:hover {
+    background: #222745;
+    color: #fff;
+}
+.weather-container > .drop-menu > h4 {
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    background: #222;
+}
+
+/*
+  ========================================
+  Video toggle button styles
+  ========================================
+*/
+.switch > input {
+    opacity: 0;
+    /*make checkbox invisible*/
+
+}
+
+.switch > .switch-btn {
+
+    width: 80px;
+    height: 35px;
+    background: #9a9a9a;
+
+    cursor: pointer;
+    position: relative;
+    border-radius: 50px;
+    line-height: 35px;
+    text-align: right;
+    padding: 0 10px;
+    color: rgba(0,0,0,.5);
+
+    box-shadow: inset 0 3px 15px -3px;
+
+}
+.switch > input:checked + .switch-btn {
+
+    background: skyblue;
+    text-align: left;
+    color:rgba(255, 255, 255, .75);
+}
+.switch > .switch-btn:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    height: 25px;
+    width: 25px;
+    background: linear-gradient(#f9f9f9 30%, #cdcdcd);
+    border-radius: 50%;
+    transition: all 200ms ease-out;
+    box-shadow: 0 15px 15px -3px rgba(0,0,0,.25), inset 0 -2px 2px -3px,  0 3px 0 0px #f9f9f9;
+    /*position button on slider*/
+
+}
+.switch > .switch-btn:after {
+    content: 'play';
+    /*Insert text into toggle button*/
+}
+
+
+
+.switch > input[type=checkbox]:checked + .switch-btn:before {
+
+
+    left: 45px;
+}
+
+.switch > input[type=checkbox]:checked + .switch-btn:after {
+    content:'stop';
+}
+
+
+/*
+  ========================================
+  Social Media icons
+  ========================================
+*/
+
+
+.glyphicon.glyphicon-th  {
+    font-size: 25px;
+    color: #ccc;
+
+}
+
+.fa-stack-1x {
+    color:white;
+}
+.icon-facebook {
+   color:#3b5998;
+
+}
+
+.icon-google {
+    color: darkred;
+}
+
+.icon-youtube {
+    color: chocolate;
+}
+
+
+
 /* -----Main Body-----------*/
 body{
   background-color: #fff;
