@@ -161,8 +161,10 @@
            </div>
 
            <div class="timer">
-              <h2 id="timeDisplay" class="inner-timer">11:30 PM</h2>
+             <!-- Display time -->
+              <h2 id="timeDisplay" class="inner-timer"></h2>
            </div>
+
            <div class="content">
              <h2 id="newFeed" class="news"><a href="#" target="_blank" id="news"></a></h2>
              <h6 id="apiHeaderElement">
@@ -226,6 +228,15 @@
            $("head").prepend('<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">');
          }
        });
+     </script>
+
+     <!-- Moment CDN with local fallback if Test fails -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+     <script>
+      if(!window.moment){
+        document.write('<script src="./js/vendor/moment.min.js"><\/script>');
+      }       
+
      </script>
 
    <!-- ALL INDIVIDUAL JS FILES (BELOW) -->

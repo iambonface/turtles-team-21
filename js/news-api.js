@@ -42,5 +42,11 @@ $(document).ready(function(){
       }
     })
 
+    function timeDisplay(){
+     //Use moment.js to display 12 hour time
+      $("#timeDisplay").html(moment().format('hh:mm A'));
+    }
+    //makes live update without reloading/refreshing browser
+    setInterval(timeDisplay, 1000);
 
 });
