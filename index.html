@@ -97,8 +97,8 @@
       <!-- Weather Forecast Container-->
       <div class="dropdown-wrapper weather-container">
           <a class="menu-button">
-              <p><i class="fa fa-sun-o fa-2x " aria-hidden="true" id="currentweatherIcon"></i> <span id="currentTemp">25 &#8451;</span></p>
-              <p>Limbe</p>
+              <p><i aria-hidden="true" id="currentweatherIcon"></i> <span id="currentTemp"></span></p>
+              <p id="weatherLocation"></p>
           </a>
 
       <div class="drop-menu">
@@ -107,40 +107,36 @@
 
           <div class="weather-submenu menu-button">
               <div>
-                  <p id="dayOne">Mon</p>
-                  <i class="fa fa-sun-o " aria-hidden="true" id="dayoneIcon"></i>
-                  <p id="dayoneTemp">25 &#8451;</p>
+                  <p id="day1"></p>
+                  <i aria-hidden="true" id="day1Icon"></i>
+                  <p id="day1Temp"></p>
               </div>
               <div>
-                  <p id="dayTwo">Tue</p>
-                  <i class="fa fa-sun-o " aria-hidden="true" id="daytwoIcon"></i>
-                  <p id="daytwoTemp">25 &#8451;</p>
+                  <p id="day2"></p>
+                  <i aria-hidden="true" id="day2Icon"></i>
+                  <p id="day2Temp"></p>
               </div>
               <div>
-                  <p id="dayThree">Wed</p>
-                  <i class="fa fa-sun-o " aria-hidden="true" id="daythreeIcon"></i>
-                  <p id="daythreeTemp">25 &#8451;</p>
+                  <p id="day3"></p>
+                  <i aria-hidden="true" id="day3Icon"></i>
+                  <p id="day3Temp"></p>
               </div>
               <div>
-                  <p id="dayFour">Thu</p>
-                  <i class="fa fa-sun-o " aria-hidden="true" id="dayfourIcon"></i>
-                  <p id="dayfourTemp">25 &#8451;</p>
+                  <p id="day4"></p>
+                  <i aria-hidden="true" id="day4Icon"></i>
+                  <p id="day4Temp"></p>
               </div>
               <div>
-                  <p id="dayFive">Fri</p>
-                  <i class="fa fa-sun-o " aria-hidden="true" id="dayfiveIcon"></i>
-                  <p id="dayfiveTemp">25 &#8451;</p>
+                  <p id="day5"></p>
+                  <i aria-hidden="true" id="day5Icon"></i>
+                  <p id="day5Temp"></p>
               </div>
               <div>
-                  <p id="daySix">Sat</p>
-                  <i class="fa fa-sun-o " aria-hidden="true" id="daysixIcon"></i>
-                  <p id="daysixTemp">25 &#8451;</p>
+                  <p id="day6"></p>
+                  <i aria-hidden="true" id="day6Icon"></i>
+                  <p id="day6Temp"></p>
               </div>
-              <div>
-                  <p id="daySeven">Sun</p>
-                  <i class="fa fa-sun-o " aria-hidden="true" id="daysevenIcon"></i>
-                  <p id="daysevenTemp">25 &#8451;</p>
-              </div>
+              
 
           </div>
 
@@ -226,5 +222,6 @@
      </script>
 
    <!-- ALL INDIVIDUAL JS FILES (BELOW) -->
+   <script src="js/weather.js"></script>
   </body>
 </html>
