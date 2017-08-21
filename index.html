@@ -174,9 +174,9 @@
                  <a class="dropdown-toggle" data-toggle="dropdown">
                    <i class="fa fa-share-alt"></i> Share</a>
                    <ul class="dropdown-menu">
-                       <li><button class="btn btn-default"><i class="fa fa-twitter"></i>Twitter</button></li>
-                       <li><button class="btn btn-default"><i class="fa fa-facebook"></i>Facebook</button></li>
-                       <li><button class="btn btn-default"><i class="fa fa-linkedin"></i>Linkedin</button></li>
+                       <li><a id="tweet"><button class="btn btn-default"><i id="tweet" class="fa fa-twitter"></i>Twitter</button></a></li>
+                       <li><a id="facebook"><button class="btn btn-default"><i class="fa fa-facebook"></i>Facebook</button></a></li>
+                       <li><a id="linkedin"><button class="btn btn-default"><i class="fa fa-linkedin"></i>Linkedin</button></a></li>
                    </ul>
                </span>
 
@@ -238,6 +238,9 @@
       }       
 
      </script>
+
+      <!--  twitter widgets plugin -->
+      <script src="https://platform.twitter.com/widgets.js"></script>
 
    <!-- ALL INDIVIDUAL JS FILES (BELOW) -->
    <script src="./js/news-api.js"></script>

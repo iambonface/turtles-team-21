@@ -38,6 +38,18 @@ $(document).ready(function(){
           $("#authorApi").html(author);
           $("#via").css({"display": "inline"})
           $("#apiHeaderElement").css({"display": "inline"})
+
+          var hashtags = "News, Chingu"; //Ensure minimal number of hashtags due to twitter limited chars
+          var station = "CNN"; //This can be set to be dynamic instead of hardcoding
+
+          $("#tweet").attr("href", 'https://twitter.com/intent/tweet?text='
+            +encodeURIComponent('"'+ news + '"')
+            + "%20" + "via" + "%20[" + station + "]%20" + url + "&hashtags=" + hashtags );
+          
+          $("#linkedin").attr("href", 'https://www.linkedin.com/cws/share?url='
+            +encodeURIComponent(''+url+''))
+          $("#facebook").css("display", "none");//temporarily disabled
+
         });
       }
     })
