@@ -329,7 +329,7 @@ a:hover{
 .content a {
   color: #fff;
   text-decoration: none;
-  transition: all 0.9s ease;
+  transition: all 0.7s ease;
 }
 .content a:hover{
   color: #ffff00;
