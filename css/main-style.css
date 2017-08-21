@@ -169,11 +169,7 @@ version 1.0
     /*Insert text into toggle button*/
 }
 
-
-
 .switch > input[type=checkbox]:checked + .switch-btn:before {
-
-
     left: 45px;
 }
 
@@ -197,18 +193,22 @@ version 1.0
 
 .fa-stack-1x {
     color:white;
+    font-size: 25px;
 }
 .icon-facebook {
    color:#3b5998;
+   font-size: 25px;
 
 }
 
 .icon-google {
     color: darkred;
+    font-size: 25px;
 }
 
 .icon-youtube {
     color: chocolate;
+
 }
 
 
@@ -344,10 +344,10 @@ a:hover{
   color: #fff;
   width: 120px;
 }
-.fa{
+/*.fa{
   margin-right: 2px;
   font-size: 15px;
-}
+}*/
 .fa-twitter{
   color: #0084b4;
 }

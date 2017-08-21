@@ -6,7 +6,7 @@ if (navigator.geolocation) {
       lat = position.coords.latitude;
       long = position.coords.longitude;
      console.log(lat,  long);
-      var apidata ='https://api.openweathermap.org/data/2.5/forecast/daily?lat='+ lat +'&lon='+ long +'&cnt=7&appid=86bbfdf2b6955b939ff05c17e5c28862';
+      var apidata ='https://api.openweathermap.org/data/2.5/forecast/daily?lat='+ lat +'&lon='+ long +'&cnt=7&units=metric&appid=86bbfdf2b6955b939ff05c17e5c28862';
 
 fetch (apidata)
  .then(blob => blob.json())
@@ -15,29 +15,16 @@ fetch (apidata)
    // forecast location
    var loc = document.querySelector('#weatherLocation');
    loc.textContent = data.city.name;
-   // location temp
-   function tempconverter(temp){
-     return (temp - 273).toFixed();
-   }
-   let ktemp = data.list["0"].temp.day;
-
-   let temperature = document.querySelector('#currentTemp');
-   temperature.textContent =  tempconverter(ktemp);
-   // weather icon
-   let iconCode = data.list["0"].weather["0"].icon;
-   let iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
-   let  icon = document.querySelector('#currentweatherIcon');
-   icon.innerHTML = ("<img src='" + iconUrl  + "'>");
 
    // forecast for the following 7 days
 
-   for(i = 1; i < data.list.length; i++){
+   for(let i = 0; i < data.list.length; i++){
      let tempID = '#day'+i+'Temp';
      let iconID = '#day'+i+'Icon';
-     //temp values for seven other days
+     //temp values for seven  days
 
      let newid = document.querySelector(tempID);
-     newid.textContent = tempconverter(data.list[i].temp.day);
+     newid.innerHTML = (data.list[i].temp.day).toFixed() + "&#8451";
      // icons for other days
 
      let iconCode = data.list[i].weather["0"].icon;
@@ -46,11 +33,42 @@ fetch (apidata)
      icon.innerHTML = ("<img src='" + iconUrl  + "'>");
    }
 
+   function cel2fah(ctemp) {
+     return ((9 * ctemp)/5) + 32;
+   }
+
+
+   let changeUnit = document.querySelector('#changeTempUnits');
+   let toggle = 1;
+   changeUnit.addEventListener("click", function(){
+
+     if(toggle){
+       changeUnit.innerHTML = "(" +"&#8451"+ ")";
+       for(let i = 0; i < data.list.length; i++){
+         let tempID = '#day'+i+'Temp';
+         let newid = document.querySelector(tempID);
+         newid.innerHTML = cel2fah(data.list[i].temp.day).toFixed() + "&#8457";
+
+       }
+       toggle = !toggle;
+     }
+     else if(!toggle) {
+       changeUnit.innerHTML = "(" +"&#8457"+ ")";
+       for(let i = 0; i < data.list.length; i++){
+         let tempID = '#day'+i+'Temp';
+         let newid = document.querySelector(tempID);
+         newid.innerHTML = (data.list[i].temp.day).toFixed() + "&#8451";
+
+       }
+       toggle = !toggle;
+     }
+
+
+   });
+
 
 
  });
-
-
 
   });
 
