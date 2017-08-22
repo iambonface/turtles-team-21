@@ -45,7 +45,7 @@ $(document).ready(function(){
           $("#tweet").attr("href", 'https://twitter.com/intent/tweet?text='
             +encodeURIComponent('"'+ news + '"')
             + "%20" + "via" + "%20[" + station + "]%20" + url + "&hashtags=" + hashtags );
-          
+
           $("#linkedin").attr("href", 'https://www.linkedin.com/cws/share?url='
             +encodeURIComponent(''+url+''))
           $("#facebook").css("display", "none");//temporarily disabled
