@@ -387,7 +387,39 @@ a.dropdown-toggle{
   position: absolute;
   bottom: 0;
 }
-
+.footer{
+  height: 30px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+.notes{
+  display: table-cell;
+}
+.todo{
+  display: table-cell;
+}
+.options{
+  display: table-cell;
+}
+.footer i {
+  font-size: 25px;
+  color: rgb(47,79,79);
+  margin-right: 20px;
+}
+.footer span{
+  line-height: 30px;
+}
+.footer .fa-cog {
+  margin-left: 10px;
+}
+.footer .fa-pencil-square-o{
+  float: right;
+}
+.footer .fa-th-list{
+  margin-right: 0px;
+  float: right;
+}
 /*---MEDIA QUERIES -----*/
 /* Galaxy S5 */
 @media only screen
