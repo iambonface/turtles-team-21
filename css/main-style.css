@@ -18,6 +18,7 @@ version 1.0
     flex-wrap: nowrap;
     justify-content: space-around;
     color: #ccc;
+    position: relative;
 }
 
 
@@ -29,9 +30,17 @@ version 1.0
 */
 .links-menu {
     width: 25%;
+    position: absolute;
+    top: 8px;
+    left: 24px;
+
 }
 .weather-container {
     width: 35%;
+    position: absolute;
+    top: 8px;
+    right: 24px;
+
 }
 .weather-container > .menu-button {
     text-align: right;
@@ -42,6 +51,7 @@ version 1.0
 .toggle {
     width: 30%;
     text-align: center;
+
 }
 
 
@@ -62,6 +72,7 @@ version 1.0
     opacity: 0;
     overflow: hidden;
     border-radius: 8px;
+
 
 
 }
@@ -169,11 +180,7 @@ version 1.0
     /*Insert text into toggle button*/
 }
 
-
-
 .switch > input[type=checkbox]:checked + .switch-btn:before {
-
-
     left: 45px;
 }
 
@@ -197,18 +204,22 @@ version 1.0
 
 .fa-stack-1x {
     color:white;
+    font-size: 25px;
 }
 .icon-facebook {
    color:#3b5998;
+   font-size: 25px;
 
 }
 
 .icon-google {
     color: darkred;
+    font-size: 25px;
 }
 
 .icon-youtube {
     color: chocolate;
+
 }
 
 
@@ -343,10 +354,10 @@ a:hover{
   color: #fff;
   width: 120px;
 }
-.fa{
+/*.fa{
   margin-right: 2px;
   font-size: 15px;
-}
+}*/
 .fa-twitter{
   color: #0084b4;
 }
