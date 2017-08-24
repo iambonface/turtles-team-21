@@ -384,42 +384,56 @@ a.dropdown-toggle{
 
 /* -----Bottom-----------*/
 .bottom{
-  position: absolute;
+  position: fixed;
   bottom: 0;
+  height: 38px;
+  right: 0;
+  left: 0;
+  background-color: grey;
 }
-.footer{
-  height: 30px;
-  margin: auto;
-  width: 100%;
-  position: relative;
+.bottom p {
+  font-size: 13px;
 }
-.notes{
-  display: table-cell;
+.bottom .inner{
+  line-height: 34px;
 }
-.todo{
-  display: table-cell;
+.footer-api{
+  line-height: 38px;
+  color: rgb(255, 255, 255);
 }
-.options{
-  display: table-cell;
+.footer-api span{
+  margin-left: 5px;
 }
-.footer i {
-  font-size: 25px;
-  color: rgb(47,79,79);
-  margin-right: 20px;
+.footer-api span i {
+  font-size: 22px;
+  margin-left: 30px;
 }
-.footer span{
-  line-height: 30px;
+textarea{
+  background: rgba(0,0,0,0.6);
+  height: 280px;
+  width: 300px;
+  border: none;
+  color: rgb(255,255,255);
+  font-size: 16px;
+  font-family: sans-serif;
 }
-.footer .fa-cog {
-  margin-left: 10px;
+#NoteBox{
+  display: none;
+  bottom:34px;
+  right: 0;
+  margin-right: 25px;
+  position: fixed;
 }
-.footer .fa-pencil-square-o{
-  float: right;
+.box-heading{
+  /*background: rgb(57,129,208);*/
+  background: grey;
+  height: 25px;
+  color: rgb(255, 255, 255);
+  line-height: 25px;
+  font-family: sans-serif;
+
 }
-.footer .fa-th-list{
-  margin-right: 0px;
-  float: right;
-}
+
 /*---MEDIA QUERIES -----*/
 /* Galaxy S5 */
 @media only screen

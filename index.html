@@ -184,7 +184,7 @@
         </div>
 
         <!-- Footer and Local Storage API Goes Here-->
-          <div class="footer">
+        <!--  <div class="footer">
             <div class="options  col-xs-4 col-ms-4">
             </div>
             <div class="notes col-md-6 col-xs-4 col-ms-4">
@@ -195,13 +195,28 @@
               <i class="fa fa-pencil-square-o"> Notes</i>
               <i class="fa fa-th-list"> Todo</i>
             </div>
+          </div>-->
+          <div id="NoteBox">
+            <div class="box-heading text-center">Note Taker</div>
+            <textarea id="NoteTextArea"></textarea>
           </div>
 
         <div class="bottom">
-          <p>News powered by <a href="https://newsapi.org/" target="_blank">NewsAPI</a></p>
+          <div class="container-fluid inner">
+            <div class="col-md-4 col-xs-4">
+              <h6>News by <a href="https://newsapi.org/" target="_blank">NewsAPI</a></h6>
+            </div>
+            <div class="footer-api col-md-8 col-xs-8">
+              <div class="api-row pull-right">
+                <span><i id="Option" class="fa fa-cog" title="Options"></i></span>
+                <span id="Note"><i class="fa fa-pencil-square-o" title="Note Taker"></i></span>
+                <span><i id="Todo" class="fa fa-th-list" title="Todo List"></i></span>
+              </div>
+            </div>
+          </div>
         </div>
 
-    <div>
+    </div>
 
 
 
@@ -256,5 +271,6 @@
 
    <!-- ALL INDIVIDUAL JS FILES (BELOW) -->
    <script src="./js/news-api.js"></script>
+   <script src="./js/local-storage.js"></script>
   </body>
 </html>
