@@ -149,7 +149,7 @@
            <!-- Bonface Mudiri Goes Here-->
            <div id="sideBar">
              <ul class="side-menu">
-               <li class="first-item"><a href="#">Emergency</a></li>
+               <li class="first-item"><a href="#" id="one">Emergency</a></li>
                <li class="list-item"><a href="#">Events</a></li>
                <li class="list-item"><a href="#">Budget</a></li>
                <li class="list-item"><a href="#">Deadlines</a></li>
@@ -157,18 +157,22 @@
            </div>
 
            <div class="timer">
-              <h2 id="timeDisplay" class="inner-timer">11:30 PM</h2>
+             <!-- Display time -->
+              <h2 id="timeDisplay" class="inner-timer"></h2>
            </div>
+
            <div class="content">
-             <h2 id="newFeed" class="news"><a href="#" target="_blank">Anthony Scaramucci sacked as Trump media chief</a></h2>
-             <h6><span id="newsAuthor" class="author">Author</span><span class="slash"> / </span>BBC News
+             <h2 id="newFeed" class="news"><a href="#" target="_blank" id="news"></a></h2>
+             <h6 id="apiHeaderElement">
+               <span id="newsAuthor" class="author">
+                 <span id="site"></span></span><span class="slash"> / </span><span id="authorApi"></span>
                <span class="dropdown">
                  <a class="dropdown-toggle" data-toggle="dropdown">
                    <i class="fa fa-share-alt"></i> Share</a>
                    <ul class="dropdown-menu">
-                       <li><button class="btn btn-default"><i class="fa fa-twitter"></i>Twitter</button></li>
-                       <li><button class="btn btn-default"><i class="fa fa-facebook"></i>Facebook</button></li>
-                       <li><button class="btn btn-default"><i class="fa fa-linkedin"></i>Linkedin</button></li>
+                       <li><a id="tweet"><button class="btn btn-default"><i id="tweet" class="fa fa-twitter"></i>Twitter</button></a></li>
+                       <li><a id="facebook"><button class="btn btn-default"><i class="fa fa-facebook"></i>Facebook</button></a></li>
+                       <li><a id="linkedin"><button class="btn btn-default"><i class="fa fa-linkedin"></i>Linkedin</button></a></li>
                    </ul>
                </span>
 
@@ -178,6 +182,7 @@
 
         <div class="bottom">
           <!-- Emmanuel Raymond Goes Here-->
+          <p>News powered by <a href="https://newsapi.org/" target="_blank">NewsAPI</a></p>
         </div>
 
     <div>
@@ -221,7 +226,20 @@
        });
      </script>
 
+     <!-- Moment CDN with local fallback if Test fails -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+     <script>
+      if(!window.moment){
+        document.write('<script src="./js/vendor/moment.min.js"><\/script>');
+      }       
+
+     </script>
+
+      <!--  twitter widgets plugin -->
+      <script src="https://platform.twitter.com/widgets.js"></script>
+
    <!-- ALL INDIVIDUAL JS FILES (BELOW) -->
    <script src="js/weather.js"></script>
+   <script src="./js/news-api.js"></script>
   </body>
 </html>

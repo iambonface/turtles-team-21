@@ -245,8 +245,7 @@ body{
 }
 
 .main{
-  height: 80vh;
-  margin-top: 10vh;
+  height: 70vh;
   position: relative;
   left: 0;
 }
@@ -341,7 +340,7 @@ a:hover{
 .content a {
   color: #fff;
   text-decoration: none;
-  transition: all 0.9s ease;
+  transition: all 0.7s ease;
 }
 .content a:hover{
   color: #ffff00;
@@ -393,6 +392,12 @@ a.dropdown-toggle{
   color: #000;
   background: rgba(0, 0, 0, 0);
 } /*-- Main Body Ends Here -- */
+
+/* -----Bottom-----------*/
+.bottom{
+  position: absolute;
+  bottom: 0;
+}
 
 /*---MEDIA QUERIES -----*/
 /* Galaxy S5 */
