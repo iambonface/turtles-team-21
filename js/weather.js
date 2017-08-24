@@ -1,78 +1,76 @@
 
 var lat, long;
 
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(function(position) {
-      lat = position.coords.latitude;
-      long = position.coords.longitude;
-     console.log(lat,  long);
-      var apidata ='https://api.openweathermap.org/data/2.5/forecast/daily?lat='+ lat +'&lon='+ long +'&cnt=7&units=metric&appid=86bbfdf2b6955b939ff05c17e5c28862';
+$.getJSON('https://ipinfo.io/geo', function(response) {
+    var loc = response.loc.split(',');
+    var coords = {
+        latitude: loc[0],
+        longitude: loc[1]
+    };
+    lat = coords.latitude;
+    long = coords.longitude;
+    console.log(lat , long );
+    var apidata ='https://api.openweathermap.org/data/2.5/forecast/daily?lat='+ lat +'&lon='+ long +'&cnt=7&units=metric&appid=86bbfdf2b6955b939ff05c17e5c28862';
 
-fetch (apidata)
- .then(blob => blob.json())
- .then(function(data){
-   console.log(data);
-   // forecast location
-   var loc = document.querySelector('#weatherLocation');
-   loc.textContent = data.city.name;
+    fetch (apidata)
+    .then(blob => blob.json())
+    .then(function(data){
+     console.log(data);
+     // forecast location
+     var location = document.querySelector('#weatherLocation');
+     location.textContent = data.city.name;
 
-   // forecast for the following 7 days
+     // forecast for the following 7 days
 
-   for(let i = 0; i < data.list.length; i++){
-     let tempID = '#day'+i+'Temp';
-     let iconID = '#day'+i+'Icon';
-     //temp values for seven  days
+     for(let i = 0; i < data.list.length; i++){
+       let tempID = '#day'+i+'Temp';
+       let iconID = '#day'+i+'Icon';
+       //temp values for seven  days
 
-     let newid = document.querySelector(tempID);
-     newid.innerHTML = (data.list[i].temp.day).toFixed() + "&#8451";
-     // icons for other days
+       let newid = document.querySelector(tempID);
+       newid.innerHTML = (data.list[i].temp.day).toFixed() + "&#8451";
+       // icons for other days
 
-     let iconCode = data.list[i].weather["0"].icon;
-     let iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
-     let  icon = document.querySelector(iconID);
-     icon.innerHTML = ("<img src='" + iconUrl  + "'>");
-   }
-
-   function cel2fah(ctemp) {
-     return ((9 * ctemp)/5) + 32;
-   }
-
-
-   let changeUnit = document.querySelector('#changeTempUnits');
-   let toggle = 1;
-   changeUnit.addEventListener("click", function(){
-
-     if(toggle){
-       changeUnit.innerHTML = "(" +"&#8451"+ ")";
-       for(let i = 0; i < data.list.length; i++){
-         let tempID = '#day'+i+'Temp';
-         let newid = document.querySelector(tempID);
-         newid.innerHTML = cel2fah(data.list[i].temp.day).toFixed() + "&#8457";
-
-       }
-       toggle = !toggle;
+       let iconCode = data.list[i].weather["0"].icon;
+       let iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+       let  icon = document.querySelector(iconID);
+       icon.innerHTML = ("<img src='" + iconUrl  + "'>");
      }
-     else if(!toggle) {
-       changeUnit.innerHTML = "(" +"&#8457"+ ")";
-       for(let i = 0; i < data.list.length; i++){
-         let tempID = '#day'+i+'Temp';
-         let newid = document.querySelector(tempID);
-         newid.innerHTML = (data.list[i].temp.day).toFixed() + "&#8451";
-
-       }
-       toggle = !toggle;
+      // convert celsius to fahrenheit and vice versa
+     function cel2fah(ctemp) {
+       return ((9 * ctemp)/5) + 32;
      }
 
 
-   });
+     let changeUnit = document.querySelector('#changeTempUnits');
+     let toggle = 1;
+     changeUnit.addEventListener("click", function(){
 
+       if(toggle){
+         changeUnit.innerHTML = "&#8451";
+         for(let i = 0; i < data.list.length; i++){
+           let tempID = '#day'+i+'Temp';
+           let newid = document.querySelector(tempID);
+           newid.innerHTML = cel2fah(data.list[i].temp.day).toFixed() + "&#8457";
 
+         }
+         toggle = !toggle;
+       }
+       else if(!toggle) {
+         changeUnit.innerHTML = "&#8457";
+         for(let i = 0; i < data.list.length; i++){
+           let tempID = '#day'+i+'Temp';
+           let newid = document.querySelector(tempID);
+           newid.innerHTML = (data.list[i].temp.day).toFixed() + "&#8451";
 
- });
+         }
+         toggle = !toggle;
+       }
+     });
+    });
 
-  });
+});
 
-}
 // days of the week and date
 let days = ["Sun","Mon", "Tues","Wed", "Thu", "Fri", "Sat"];
 let months =  ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep","Oct", "Nov", "Dec"];
