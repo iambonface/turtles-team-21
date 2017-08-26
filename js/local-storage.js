@@ -1,6 +1,9 @@
 $(document).ready(function(){
   getNotes() //gets all items of NoteTaker in localStorage
   var todoList = new Array() //Stores all todos
+
+  $("#Option").css("display","none") //Disable Option for future refactoring
+
   //Making textarea to slide up or down on click states
   $('#Note').click(function(){
     if($('#Note').attr('data-click-state') == 1){
