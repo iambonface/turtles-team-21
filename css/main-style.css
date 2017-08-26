@@ -223,14 +223,15 @@ body{
 
 }
 @keyframes random-kit {
-  0% { background-color: #333745; }
+  0% { background-color: ##46edc8; }
 
-  50% { background-color: #e63462; }
+  50% { background-color: #374d7c; }
 
-  75% { background-color: #FE5F55; }
+  75% { background-color: #ff5978; }
 
-  100% { background-color: #C73FCF; }
-  0% { background-color: #C73FCF; }
+  100% { background-color: #fbb35a; }
+
+  0% { background-color: #fbb35a; }
 }
 
 .main{
@@ -389,7 +390,7 @@ a.dropdown-toggle{
   height: 38px;
   right: 0;
   left: 0;
-  background-color: grey;
+  /*background-color: rgb(55,77,124);*/
 }
 .bottom p {
   font-size: 13px;
@@ -426,11 +427,68 @@ textarea{
 }
 .box-heading{
   /*background: rgb(57,129,208);*/
-  background: grey;
-  height: 25px;
+  background: #374d7c;
+  height: 30px;
   color: rgb(255, 255, 255);
   line-height: 25px;
   font-family: sans-serif;
+}
+
+#TodoBox{
+  display: none;
+  bottom:34px;
+  right: 0;
+  margin-right: 25px;
+  position: fixed;
+  font-family: sans-serif;
+}
+#TodoInput{
+  background: rgba(0,0,0,0.6);
+  width: 300px;
+  border: none;
+  color: rgb(255,255,255);
+  font-size: 16px;
+  font-family: sans-serif;
+  height: 30px;
+}
+#TodoWrapper{
+  background: rgba(0,0,0,0.6);
+  color: rgb(255,255,255);
+}
+.todo-panel {
+  height: 34px;
+  border-bottom: 1px solid rgb(255,255,255);
+  padding-left:15px;
+}
+.todo-input{
+  line-height: 34px;
+}
+
+
+#TodoBox ::-webkit-input-placeholder{
+  /* Webkit, Blink, Edge */
+  color: rgb(255, 255, 255);
+  padding: 2px;
+}
+#TodoBox :-moz-placeholder{
+  /* Mozilla Firefox 4 to 18 */
+  color: rgba(255, 255, 255, 1);
+  padding: 2px;
+}
+#TodoBox ::-moz-placeholder{
+  /* Mozilla Firefox 19+ */
+  color: rgba(255, 255, 255, 1);
+  padding: 2px;
+}
+#TodoBox :-ms-input-placeholder{
+  /* Internet Explorer 10 to 11 */
+  color: rgb(255, 255, 255);
+  padding: 2px;
+}
+#TodoBox ::-ms-input-placeholder{
+  /* Microsoft Edge */
+  color: rgb(255, 255, 255);
+  padding: 2px;
 
 }
 

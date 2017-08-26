@@ -1,6 +1,6 @@
 $(document).ready(function(){
   getNotes() //gets all items of NoteTaker in localStorage
-
+  var todoList = new Array() //Stores all todos
   //Making textarea to slide up or down on click states
   $('#Note').click(function(){
     if($('#Note').attr('data-click-state') == 1){
@@ -15,7 +15,6 @@ $(document).ready(function(){
   //Save data automatically to localStorage while user is typing. Set delay is 1 second
   var timeout;
   $("#NoteBox").on("input propertychange change", function(){
-    console.log("changing");
     clearTimeout(timeout);
     timeout = setTimeout(function() {
       writeNotes();
@@ -33,5 +32,17 @@ $(document).ready(function(){
     var localText = localStorage.getItem("notes")
     $("#NoteTextArea").html(localText)
   }
+
+  //Making todo to slide up or down on click states
+  $('#Todo').click(function(){
+    if($('#Todo').attr('data-click-state') == 1){
+      $('#Todo').attr('data-click-state', 0)
+      $("#TodoBox").slideUp();
+    } else {
+      $('#Todo').attr('data-click-state', 1)
+      $("#TodoBox").slideDown();
+    }
+  })
+
 
 }) //End of document.ready()
