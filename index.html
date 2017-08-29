@@ -30,7 +30,6 @@
     <!-- APP Content starts here-->
     <div class="container-fluid viewport">
       <div class="flex-container">
-      <!-- Anye Fon Goes Here-->
       <!-- Quick Links Menu-->
       <div class="dropdown-wrapper links-menu">
           <a class="menu-button">
@@ -146,7 +145,7 @@
   </div>
 
         <div class="main">
-           <!-- Bonface Mudiri Goes Here-->
+           <!-- Main Body Goes Here-->
            <div id="sideBar">
              <ul class="side-menu">
                <li class="first-item"><a href="#" id="one">Emergency</a></li>
@@ -180,12 +179,52 @@
            </div>
         </div>
 
+        <!-- Footer and Local Storage API Goes Here-->
+        <!--  <div class="footer">
+            <div class="options  col-xs-4 col-ms-4">
+            </div>
+            <div class="notes col-md-6 col-xs-4 col-ms-4">
+
+            </div>
+            <div class="todo col-md-6 col-xs-4 col-ms-4">
+              <i class="fa fa-cog"> Options</i>
+              <i class="fa fa-pencil-square-o"> Notes</i>
+              <i class="fa fa-th-list"> Todo</i>
+            </div>
+          </div>-->
+          <div id="NoteBox">
+            <div class="box-heading text-center">Note Taker</div>
+            <textarea id="NoteTextArea"></textarea>
+          </div>
+
+          <div id="TodoBox">
+            <div id="TodoHeader" class="box-heading text-center">Todo</div>
+            <div id="TodoWrapper">
+              <div id="TodoStatus"></div>
+              <div id="TodoDisplay">
+              </div>
+              <div id="TodoItem">
+              </div>
+              <input id="TodoInput" type="text" placeholder="What needs to be done today?" />
+            </div>
+          </div>
+
         <div class="bottom">
-          <!-- Emmanuel Raymond Goes Here-->
-          <p>News powered by <a href="https://newsapi.org/" target="_blank">NewsAPI</a></p>
+          <div class="container-fluid inner">
+            <div class="col-md-4 col-xs-4">
+              <h6>News by <a href="https://newsapi.org/" target="_blank">NewsAPI</a></h6>
+            </div>
+            <div class="footer-api col-md-8 col-xs-8">
+              <div class="api-row pull-right">
+                <span><i id="Option" class="fa fa-cog" title="Options"></i></span>
+                <span id="Note"><i class="fa fa-pencil-square-o" title="Note Taker"></i></span>
+                <span><i id="Todo" class="fa fa-th-list" title="Todo List"></i></span>
+              </div>
+            </div>
+          </div>
         </div>
 
-    <div>
+    </div>
 
 
 
@@ -231,15 +270,20 @@
      <script>
       if(!window.moment){
         document.write('<script src="./js/vendor/moment.min.js"><\/script>');
-      }       
+      }
 
      </script>
 
       <!--  twitter widgets plugin -->
       <script src="https://platform.twitter.com/widgets.js"></script>
 
+    <!--  Sweet Alert plugin for js confirm replacement -->
+    <script src="./js/vendor/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./js/vendor/sweetalert.css">
+
    <!-- ALL INDIVIDUAL JS FILES (BELOW) -->
    <script src="js/weather.js"></script>
    <script src="./js/news-api.js"></script>
+   <script src="./js/local-storage.js"></script>
   </body>
 </html>
