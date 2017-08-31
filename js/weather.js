@@ -31,10 +31,16 @@ $.getJSON('https://ipinfo.io/geo', function(response) {
        newid.innerHTML = (data.list[i].temp.day).toFixed() + "&#8451";
        // icons for other days
 
+       let iconCode = data.list[i].weather["0"].id;
+       let  icon = document.querySelector(iconID);
+       icon.innerHTML = ("<i class = 'owf owf-" + iconCode + "-n owf-2x owf-pull-right' data-toggle = 'tooltip' data-placement = 'bottom' title = "+ data.list[i].weather["0"].description +"></i>");
+       /*
+
        let iconCode = data.list[i].weather["0"].icon;
        let iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
        let  icon = document.querySelector(iconID);
        icon.innerHTML = ("<img src='" + iconUrl  + "'>");
+       */
      }
       // convert celsius to fahrenheit and vice versa
      function cel2fah(ctemp) {
