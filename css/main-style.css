@@ -531,6 +531,81 @@ textarea{
 
 }
 
+
+/*--- Menu Links ---*/
+#Menu {
+  top:45px;
+  left: 12px;
+  z-index: 1;
+  transition: all 0.7s ease;
+}
+.glyphicon-th:hover{
+  color: #3b5998;
+}
+#MenuButtonBox {
+  width: 200px;
+  background: rgba(0,0,0, 0.6);
+  border-radius: 3px;
+  margin-left: 10px;
+  top: 85px;
+  padding: 0px;
+  position: fixed;
+  z-index: 10;
+  display: none;
+}
+#MenuButtonBox .fa{
+  font-size: 20px;
+}
+
+#MenuButtonBox .fa-youtube-play{
+  color: red;
+}
+
+#MenuButtonBox .fa-facebook-official{
+  color: #3b5998;
+}
+
+#MenuButtonBox img{
+  height: 20px;
+}
+
+#MenuButtonBox .youtube{
+  width: 22px;
+}
+
+#MenuButtonBox .fa-google{
+  color: #0266C8;
+}
+
+.divisor{
+  padding: 14px;
+  color: white;
+  margin-left: 0;
+  index: 10;
+}
+.quick-links{
+  background: #3b5998;
+}
+#MenuButtonBox button{
+  background: rgba(0,0,0,0.5);
+  color: grey;
+  border: none;
+  transition: all 0.4s ease;
+}
+#MenuButtonBox button:hover{
+  background: rgba(0,0,0,1);
+  color: white;
+  border: none;
+}
+.divisor a {
+  cursor: pointer;
+}
+
+#Cancel{
+  margin-left: 5px;
+}
+
+
 /*---MEDIA QUERIES -----*/
 /* Galaxy S5 */
 @media only screen
