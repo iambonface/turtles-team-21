@@ -33,6 +33,11 @@ $(document).ready(function(){
     return false;
   })
 
+  $(".twitter-link").click(function(){
+    window.open("https://www.twitter.com");
+    return false;
+  })
+
   //Add custom quick links dynamically
   $('#QuickLink').attr('data-click-state', 1)
   $('#QuickLink').click(function(){
