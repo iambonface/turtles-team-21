@@ -553,6 +553,13 @@ textarea{
   z-index: 10;
   display: none;
 }
+#MenuButtonBox #Url {
+  width: 200px;
+  background: rgba(0,0,0, 0.6);
+  padding: 0px;
+  z-index: 10;
+}
+
 #MenuButtonBox .fa{
   font-size: 20px;
 }
@@ -567,6 +574,15 @@ textarea{
 
 #MenuButtonBox img{
   height: 20px;
+}
+img#QuickLink{
+  height: 25px;
+  z-index: 20;
+  transition: all 0.8s ease;
+}
+img#QuickLink:hover{
+  height: 33px;
+  z-index: 20;
 }
 
 #MenuButtonBox .youtube{
@@ -586,7 +602,7 @@ textarea{
 .quick-links{
   background: #3b5998;
 }
-#MenuButtonBox button{
+#MenuButtonBox button {
   background: rgba(0,0,0,0.5);
   color: grey;
   border: none;
@@ -597,6 +613,7 @@ textarea{
   color: white;
   border: none;
 }
+
 .divisor a {
   cursor: pointer;
 }
@@ -604,7 +621,24 @@ textarea{
 #Cancel{
   margin-left: 5px;
 }
+#ButtonLink {
+  background: rgba(0,0,0,0.5);
+  color: grey;
+  border: 1px solid black;
+  transition: all 0.4s ease;
+  border-radius: 0;
+  height: 30px;
+  width: 182px;
+}
+#ButtonLink:hover{
+  background: rgba(0,0,0,1);
+  color: white;
+  border: 1px solid black;
+}
 
+.fa-trash-o{
+  color: silver;
+}
 
 /*---MEDIA QUERIES -----*/
 /* Galaxy S5 */
