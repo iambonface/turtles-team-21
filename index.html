@@ -32,64 +32,34 @@
   <body>
     <!-- APP Content starts here-->
     <div class="container-fluid viewport">
+
+      <!-- Left Menu Buton and Links -->
+        <a class="menu-button">
+            <span id="Menu" class="glyphicon glyphicon-th"></span>
+        </a>
+
+        <div id="MenuButtonBox" class="btn-group-vertical" style="z-index: 10;">
+          <button type="button" class="btn btn-primary"><i class="fa fa-th-large pull-left"></i><span class="pull-right">Applications</span></button>
+
+         <button type="button" class="btn btn-primary"><i class="fa fa-bookmark pull-left"></i><span class="pull-right">Bookmarks</span></button>
+
+          <button type="button" class="btn btn-primary"><i class="fa fa-history pull-left"></i><span class="pull-right">History</span></button>
+
+          <div class="divisor quick-links text-center">Add Custom Links<span class="pull-right"><a title="create link"><img id="QuickLink" src="https://user-images.githubusercontent.com/16631356/29844730-fbba1cee-8d18-11e7-90e1-6ec75c76b2db.png"></img></a></span></div>
+
+          <button type="button" class="btn btn-primary google-link"><img src="https://user-images.githubusercontent.com/16631356/29844118-e19f56aa-8d16-11e7-803e-5977486145a3.png" class="pull-left"></img><span class="pull-right">Google</span></button>
+
+          <button type="button" class="btn btn-primary youtube-link"><img src="https://user-images.githubusercontent.com/16631356/29845200-a77c9772-8d1a-11e7-9ae4-00acec06301a.png" class="pull-left youtube"></img><span class="pull-right">Youtube</span></button>
+
+          <button type="button" class="btn btn-primary facebook-link"><img src="https://user-images.githubusercontent.com/16631356/29844402-d3cbb860-8d17-11e7-8378-5eb7d54db10c.png" class="pull-left"></img><span class="pull-right">Facebook</span></button>
+
+         <button type="button" class="btn btn-primary linkedin-link"><img src="https://user-images.githubusercontent.com/16631356/29844592-7ed1eaea-8d18-11e7-970c-05f019399012.png" class="pull-left"></img><span class="pull-right">Linkedin</span></button>
+
+         <button type="button" class="btn btn-primary twitter-link"><img src="https://user-images.githubusercontent.com/16631356/29996985-66519960-9011-11e7-96c1-df1235f179c5.png" class="pull-left"></img><span class="pull-right">Twitter</span></button>
+
+        </div>
+
       <div class="flex-container">
-      <!-- Quick Links Menu-->
-      <div class="dropdown-wrapper links-menu">
-          <a class="menu-button">
-              <span class="glyphicon glyphicon-th"></span>
-
-          </a>
-          <div class="drop-menu">
-              <a class="menu-button" href="#">
-                  <span class="fa-stack fa-lg icon-facebook">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-plus-circle fa-stack-1x" aria-hidden="true"></i>
-                  </span>
-                  <span>Apps</span>
-              </a>
-              <a class="menu-button" href="#">
-                 <span class="fa-stack fa-lg icon-facebook">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-history fa-stack-1x" aria-hidden="true"></i>
-                  </span> <span>History</span>
-
-              </a>
-              <a class="menu-button" href="#">
-                  <span class="fa-stack fa-lg icon-facebook">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-bookmark fa-stack-1x" aria-hidden="true"></i>
-                  </span>
-                  <span>Bookmarks</span>
-              </a>
-              <span class="dropdown-header">Social Media</span>
-
-              <a href="#" class="menu-button">
-                  <span class="fa-stack fa-lg icon-facebook">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-facebook fa-stack-1x"></i>
-                  </span>
-                  <span >Facebook</span>
-              </a>
-              <a href="#" class="menu-button">
-                  <span class="fa-stack fa-lg icon-google">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-google fa-stack-1x"></i>
-
-                  </span>
-                  <span>Google</span>
-              </a>
-               <a href="#" class="menu-button">
-                  <span class="fa-stack fa-lg icon-youtube">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-youtube fa-stack-1x"></i>
-                  </span>
-                  <span>Youtube</span>
-              </a>
-
-          </div>
-
-      </div>
-
       <!-- Video Button-->
       <div class="toggle">
           <label class="switch">
@@ -150,15 +120,6 @@
 
         <div class="main">
            <!-- Main Body Goes Here-->
-           <div id="sideBar">
-             <ul class="side-menu">
-               <li class="first-item"><a href="#" id="one">Emergency</a></li>
-               <li class="list-item"><a href="#">Events</a></li>
-               <li class="list-item"><a href="#">Budget</a></li>
-               <li class="list-item"><a href="#">Deadlines</a></li>
-            </ul>
-           </div>
-
            <div class="timer">
              <!-- Display time -->
               <h2 id="timeDisplay" class="inner-timer"></h2>
@@ -289,6 +250,8 @@
    <script src="js/weather.js"></script>
    <script src="./js/news-api.js"></script>
    <script src="./js/local-storage.js"></script>
+   <script src="./js/menu-toggle.js"></script>
+
    <script>
     $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
