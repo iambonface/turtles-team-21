@@ -601,6 +601,8 @@ img#QuickLink:hover{
 }
 .quick-links{
   background: #3b5998;
+  letter-spacing: 1px;
+  font-family": sans-serif;
 }
 #MenuButtonBox button {
   background: rgba(0,0,0,0.5);
