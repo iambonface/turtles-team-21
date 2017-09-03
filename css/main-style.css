@@ -233,7 +233,7 @@ body{
   background-color: #fff;
   -webkit-animation: random-kit 25s ease-out infinite;
   animation: random-kit 25s ease-out infinite;
-  cursor: url('../img/cursor-pointer-grey.cur'), auto;
+  cursor: url('../img/cursor-pointer-blue.cur'), auto;
   font-family: 'Playfair Display', serif;
 
 }
