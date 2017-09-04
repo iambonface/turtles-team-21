@@ -64,7 +64,7 @@ version 1.0
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #333745;
+    background: rgba(0,0,0,0.6);
     padding: 10px;
     align-items: center;
     transition: max-height 0.4s, opacity 0.3s;
