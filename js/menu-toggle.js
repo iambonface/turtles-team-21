@@ -43,13 +43,20 @@ $(document).ready(function(){
     return false;
   })
 
+
+  $("#QuickLink").hover(function(){
+    $(this).attr("src", "https://user-images.githubusercontent.com/16631356/30085070-a7724938-929d-11e7-81ad-406596ac4253.png")
+  }, function(){
+    $("#QuickLink").attr("src", "https://user-images.githubusercontent.com/16631356/29844730-fbba1cee-8d18-11e7-90e1-6ec75c76b2db.png")
+  })
+
   //Add custom quick links dynamically
   $('#QuickLink').attr('data-click-state', 1)
   $('#QuickLink').click(function(){
       if($('#QuickLink').attr('data-click-state') == 1){
         $('#QuickLink').attr('data-click-state', 0)
         var newLink = '<div id="WebsiteInput"><input placeholder="Unique Title" id="WebsiteTitle" class="input-link"/><br/>'
-        +'<input placeholder="Website(http:// required)" id="WebsiteUrl" class="input-link"/></div>'
+        +'<input placeholder="Website (http:// required)" id="WebsiteUrl" class="input-link"/></div>'
         $("#MenuButtonBox").append(newLink);
         $("input.input-link").css({
           "width": "200px",

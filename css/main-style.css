@@ -581,7 +581,7 @@ img#QuickLink{
   transition: all 0.8s ease;
 }
 img#QuickLink:hover{
-  height: 33px;
+  height: 25px;
   z-index: 20;
 }
 
