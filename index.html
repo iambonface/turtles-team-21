@@ -22,6 +22,10 @@
     <!-- ========= openweathermap fonts    ========= -->
     <link rel="stylesheet" type="text/css" href="./css/owfont-master/css/owfont-regular.css">
 
+    <!-- ========= Sweetalert ========= -->
+    <link rel="stylesheet" type="text/css" href="./css/sweetalert.css">
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -199,9 +203,7 @@
     <!-- ====== ALL PLUGINS & VENDOR FILES BELOW ===== -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- jQuery local fallback incase CDN fails -->
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./js/jquery.min.js"></script>
 
     <!--  ALL COMPILED PLUGINS (BELOW) -->
     <!-- Latest compiled and minified Bootstrap-->
@@ -209,7 +211,7 @@
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Bootstrap JS local fallback -->
-    <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="js/vendor/bootstrap.min.js"><\/script>')}</script>
+    <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/bootstrap.min.js"><\/script>')}</script>
 
     <!-- Bootstrap CSS Test and local fallback if Bootstrap fails -->
     <div id="bootstrapCssTest" class="hidden"> <i class="fa fa-heart"></i></div>
@@ -230,21 +232,14 @@
        });
      </script>
 
-     <!-- Moment CDN with local fallback if Test fails -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-     <script>
-      if(!window.moment){
-        document.write('<script src="./js/vendor/moment.min.js"><\/script>');
-      }
+     <!-- Moment js -->
+     <script src="./js/moment.min.js"></script>
 
-     </script>
+  <!--  twitter widgets plugin -->
+   <script src="https://platform.twitter.com/widgets.js"></script>
 
-      <!--  twitter widgets plugin -->
-      <script src="https://platform.twitter.com/widgets.js"></script>
-
-    <!--  Sweet Alert plugin for js confirm replacement -->
-    <script src="./js/vendor/sweetalert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./js/vendor/sweetalert.css">
+  <!--  Sweet Alert plugin for js confirm replacement -->
+  <script src="./js/sweetalert.min.js"></script>
 
    <!-- ALL INDIVIDUAL JS FILES (BELOW) -->
    <script src="js/weather.js"></script>
