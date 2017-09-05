@@ -604,13 +604,15 @@ img#QuickLink:hover{
   letter-spacing: 1px;
   font-family": sans-serif;
 }
-#MenuButtonBox button {
+#MenuButtonBox a.chrome-btn {
   background: rgba(0,0,0,0.5);
   color: grey;
   border: none;
   transition: all 0.4s ease;
+  height: 30px;
+  z-index: 80;
 }
-#MenuButtonBox button:hover{
+#MenuButtonBox a.chrome-btn:hover{
   background: rgba(0,0,0,1);
   color: white;
   border: none;

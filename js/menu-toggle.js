@@ -16,6 +16,11 @@ $(document).ready(function(){
     }
   })
 
+   $('body').on('click', '.tab', function(){
+      chrome.tabs.create({url: $(this).attr('href')});
+      return false;
+    });
+
   $(".google-link").click(function(){
     window.open("https://www.google.com");
     return false;
@@ -144,5 +149,9 @@ $(document).ready(function(){
 
   }
 
+
+  function app(){
+    window.open("chrome://bookmarks/")
+  }
 
 });
