@@ -1,0 +1,15 @@
+{
+	"name": "tabyetu",
+	"description": "Add a minimalistic new tab with current news, todo, note taker, weather, bookmark, custom urls and video. No more boring tabs! ",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"icons":{
+		"128":"128x128.png"
+	},
+	"chrome_url_overrides":{
+		"newtab": "index.html"
+	},
+  "permissions": [
+    "tabs"
+  ]
+}

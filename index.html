@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="A chrome extention that boasts productivity; built in Chingu-Voyage B2L Labs.">
-    <meta name="author" content="Anye Fon, Bonface Mudiri, Emmanuel Raymond">
+    <meta name="description" content="A minimalistic new tab chrome extension with current news, todo, note taker, weather, bookmark, custom urls, video and more!. No more boring tabs!">
+    <meta name="author" content="Bonface Mudiri, Emmanuel Raymond">
     <title>New Tab</title>
 
     <!-- Latest compiled and minified CSS -->
@@ -21,6 +21,12 @@
 
     <!-- ========= openweathermap fonts    ========= -->
     <link rel="stylesheet" type="text/css" href="./css/owfont-master/css/owfont-regular.css">
+
+    <!-- ========= Sweetalert ========= -->
+    <link rel="stylesheet" type="text/css" href="./css/sweetalert.css">
+
+    <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet"> 
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,25 +43,25 @@
         <a class="menu-button">
             <span id="Menu" class="glyphicon glyphicon-th"></span>
         </a>
-
+    
         <div id="MenuButtonBox" class="btn-group-vertical" style="z-index: 10;">
-          <button type="button" class="btn btn-primary"><i class="fa fa-th-large pull-left"></i><span class="pull-right">Applications</span></button>
+          <a type="button" class="btn btn-primary chrome-btn tab" href="chrome://apps"><i class="fa fa-th-large pull-left"></i><span class="pull-right">Applications</span></a>
 
-         <button type="button" class="btn btn-primary"><i class="fa fa-bookmark pull-left"></i><span class="pull-right">Bookmarks</span></button>
+         <a type="button" class="btn btn-primary chrome-btn tab" href="chrome://bookmarks"><i class="fa fa-bookmark pull-left"></i><span class="pull-right">Bookmarks</span></a>
 
-          <button type="button" class="btn btn-primary"><i class="fa fa-history pull-left"></i><span class="pull-right">History</span></button>
+          <a type="button" class="btn btn-primary chrome-btn tab" href="chrome://history"><i class="fa fa-history pull-left"></i><span class="pull-right">History</span></a>
 
-          <div class="divisor quick-links text-center">Add Custom Links<span class="pull-right"><a title="create link"><img id="QuickLink" src="https://user-images.githubusercontent.com/16631356/29844730-fbba1cee-8d18-11e7-90e1-6ec75c76b2db.png"></img></a></span></div>
+          <div class="divisor quick-links text-center">Add Custom Links<span class="pull-right"><a title="Add new link"><img id="QuickLink" src="https://user-images.githubusercontent.com/16631356/29844730-fbba1cee-8d18-11e7-90e1-6ec75c76b2db.png"></img></a></span></div>
 
-          <button type="button" class="btn btn-primary google-link"><img src="https://user-images.githubusercontent.com/16631356/29844118-e19f56aa-8d16-11e7-803e-5977486145a3.png" class="pull-left"></img><span class="pull-right">Google</span></button>
+          <a type="button" class="btn btn-primary chrome-btn google-link"><img src="https://user-images.githubusercontent.com/16631356/29844118-e19f56aa-8d16-11e7-803e-5977486145a3.png" class="pull-left"></img><span class="pull-right">Google</span></a>
 
-          <button type="button" class="btn btn-primary youtube-link"><img src="https://user-images.githubusercontent.com/16631356/29845200-a77c9772-8d1a-11e7-9ae4-00acec06301a.png" class="pull-left youtube"></img><span class="pull-right">Youtube</span></button>
+          <a type="button" class="btn btn-primary chrome-btn youtube-link"><img src="https://user-images.githubusercontent.com/16631356/29845200-a77c9772-8d1a-11e7-9ae4-00acec06301a.png" class="pull-left youtube"></img><span class="pull-right">Youtube</span></a>
 
-          <button type="button" class="btn btn-primary facebook-link"><img src="https://user-images.githubusercontent.com/16631356/29844402-d3cbb860-8d17-11e7-8378-5eb7d54db10c.png" class="pull-left"></img><span class="pull-right">Facebook</span></button>
+          <a type="button" class="btn btn-primary chrome-btn facebook-link"><img src="https://user-images.githubusercontent.com/16631356/29844402-d3cbb860-8d17-11e7-8378-5eb7d54db10c.png" class="pull-left"></img><span class="pull-right">Facebook</span></a>
 
-         <button type="button" class="btn btn-primary linkedin-link"><img src="https://user-images.githubusercontent.com/16631356/29844592-7ed1eaea-8d18-11e7-970c-05f019399012.png" class="pull-left"></img><span class="pull-right">Linkedin</span></button>
+         <a type="button" class="btn btn-primary chrome-btn linkedin-link"><img src="https://user-images.githubusercontent.com/16631356/29844592-7ed1eaea-8d18-11e7-970c-05f019399012.png" class="pull-left"></img><span class="pull-right">Linkedin</span></a>
 
-         <button type="button" class="btn btn-primary twitter-link"><img src="https://user-images.githubusercontent.com/16631356/29996985-66519960-9011-11e7-96c1-df1235f179c5.png" class="pull-left"></img><span class="pull-right">Twitter</span></button>
+         <a type="button" class="btn btn-primary chrome-btn twitter-link"><img src="https://user-images.githubusercontent.com/16631356/29996985-66519960-9011-11e7-96c1-df1235f179c5.png" class="pull-left"></img><span class="pull-right">Twitter</span></a>
 
         </div>
 
@@ -145,18 +151,6 @@
         </div>
 
         <!-- Footer and Local Storage API Goes Here-->
-        <!--  <div class="footer">
-            <div class="options  col-xs-4 col-ms-4">
-            </div>
-            <div class="notes col-md-6 col-xs-4 col-ms-4">
-
-            </div>
-            <div class="todo col-md-6 col-xs-4 col-ms-4">
-              <i class="fa fa-cog"> Options</i>
-              <i class="fa fa-pencil-square-o"> Notes</i>
-              <i class="fa fa-th-list"> Todo</i>
-            </div>
-          </div>-->
           <div id="NoteBox">
             <div class="box-heading text-center">Note Taker</div>
             <textarea id="NoteTextArea"></textarea>
@@ -189,77 +183,56 @@
           </div>
         </div>
 
-    </div>
-
-
-
-
-    <!-- APP Content ends here-->
+    </div><!-- APP Content ends here-->
 
     <!-- ====== ALL PLUGINS & VENDOR FILES BELOW ===== -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- jQuery local fallback incase CDN fails -->
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/moment.min.js"></script>
+    <script src="./js/twitter-widgets.js"></script>
+    <script src="./js/sweetalert.min.js"></script>
+    <!-- ALL INDIVIDUAL JS FILES (BELOW) -->
+    <script src="js/weather.js"></script>
+    <script src="./js/news-api.js"></script>
+    <script src="./js/local-storage.js"></script>
+    <script src="./js/menu-toggle.js"></script>
+    <script src="./js/random-media.js"></script>
 
-    <!--  ALL COMPILED PLUGINS (BELOW) -->
     <!-- Latest compiled and minified Bootstrap-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 
     <!-- Bootstrap JS local fallback -->
-    <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="js/vendor/bootstrap.min.js"><\/script>')}</script>
+    <!--<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/bootstrap.min.js"><\/script>')}</script>-->
 
-    <!-- Bootstrap CSS Test and local fallback if Bootstrap fails -->
+    <!-- Bootstrap CSS Test and local fallback if Bootstrap fails 
     <div id="bootstrapCssTest" class="hidden"> <i class="fa fa-heart"></i></div>
-   <script>
+    <script>
      $(function() {
        if ($('#bootstrapCssTest').is(':visible')) {
          $("head").prepend('<link rel="stylesheet" href="./css/bootstrap.min.css">');
        }
      });
-   </script>
+   </script>-->
 
    <!-- FontAwesome Test with local fallback if Test fails -->
-     <script>
+     <!--<script>
        $(function() {
          if ($('.fa').css('font-family') !== 'FontAwesome') {
            $("head").prepend('<link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">');
          }
        });
-     </script>
+     </script>-->
 
-     <!-- Moment CDN with local fallback if Test fails -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-     <script>
-      if(!window.moment){
-        document.write('<script src="./js/vendor/moment.min.js"><\/script>');
-      }
+  <!--  twitter widgets plugin -->
+  <!--<script src="https://platform.twitter.com/widgets.js"></script>-->
 
-     </script>
-
-      <!--  twitter widgets plugin -->
-      <script src="https://platform.twitter.com/widgets.js"></script>
-
-    <!--  Sweet Alert plugin for js confirm replacement -->
-    <script src="./js/vendor/sweetalert.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./js/vendor/sweetalert.css">
-
-   <!-- ALL INDIVIDUAL JS FILES (BELOW) -->
-   <script src="js/weather.js"></script>
-   <script src="./js/news-api.js"></script>
-   <script src="./js/local-storage.js"></script>
-   <script src="./js/menu-toggle.js"></script>
-   <script src="./js/random-media.js"></script>
-
-
-   <script>
-    $(document).ready(function(){
+   <!--<script>
+   $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
     });
-    </script>
-
-
+    </script>-->
   </body>
 </html>
