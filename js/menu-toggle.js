@@ -73,7 +73,7 @@ $(document).ready(function(){
              var websiteUrl = $("#WebsiteUrl").val();
              var newUrl = '<span class="link-wrap" id="LinkWrap"><a href="'+websiteUrl+'" id="ButtonLink" type="button" class="btn btn-primary" target="_blank">'+
                '<img src="https://user-images.githubusercontent.com/16631356/29923175-34913e50-8e61-11e7-9d78-0111d1d26eb1.png" class="pull-left"></img>'+
-               '<span class="pull-right innerUrl">' + title + '</a><i class="fa fa-trash-o delete-link" title="Delete '+title+'"></i></span>'
+               '<span class="pull-right innerUrl">' + title + '</a><i id="DeleteQuickLink" class="fa fa-trash-o delete-link" title="Delete '+title+'"></i></span>'
               $("#MenuButtonBox").append(newUrl);
              linkObj = {} //declare empty object to store title and url as key value pair
              $("#WebsiteTitle").val('');  //Reset input

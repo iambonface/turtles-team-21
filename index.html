@@ -25,7 +25,7 @@
     <!-- ========= Sweetalert ========= -->
     <link rel="stylesheet" type="text/css" href="./css/sweetalert.css">
 
-    <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -43,25 +43,25 @@
         <a class="menu-button">
             <span id="Menu" class="glyphicon glyphicon-th"></span>
         </a>
-    
+
         <div id="MenuButtonBox" class="btn-group-vertical" style="z-index: 10;">
-          <a type="button" class="btn btn-primary chrome-btn tab" href="chrome://apps"><i class="fa fa-th-large pull-left"></i><span class="pull-right">Applications</span></a>
+          <a id="Applications" type="button" class="btn btn-primary chrome-btn tab" href="chrome://apps"><i class="fa fa-th-large pull-left"></i><span class="pull-right">Applications</span></a>
 
-         <a type="button" class="btn btn-primary chrome-btn tab" href="chrome://bookmarks"><i class="fa fa-bookmark pull-left"></i><span class="pull-right">Bookmarks</span></a>
+         <a id="Bookmarks" type="button" class="btn btn-primary chrome-btn tab" href="chrome://bookmarks"><i class="fa fa-bookmark pull-left"></i><span class="pull-right">Bookmarks</span></a>
 
-          <a type="button" class="btn btn-primary chrome-btn tab" href="chrome://history"><i class="fa fa-history pull-left"></i><span class="pull-right">History</span></a>
+          <a id="History" type="button" class="btn btn-primary chrome-btn tab" href="chrome://history"><i class="fa fa-history pull-left"></i><span class="pull-right">History</span></a>
 
           <div class="divisor quick-links text-center">Add Custom Links<span class="pull-right"><a title="Add new link"><img id="QuickLink" src="https://user-images.githubusercontent.com/16631356/29844730-fbba1cee-8d18-11e7-90e1-6ec75c76b2db.png"></img></a></span></div>
 
-          <a type="button" class="btn btn-primary chrome-btn google-link"><img src="https://user-images.githubusercontent.com/16631356/29844118-e19f56aa-8d16-11e7-803e-5977486145a3.png" class="pull-left"></img><span class="pull-right">Google</span></a>
+          <a id="GoogleLink" type="button" class="btn btn-primary chrome-btn google-link"><img src="https://user-images.githubusercontent.com/16631356/29844118-e19f56aa-8d16-11e7-803e-5977486145a3.png" class="pull-left"></img><span class="pull-right">Google</span></a>
 
-          <a type="button" class="btn btn-primary chrome-btn youtube-link"><img src="https://user-images.githubusercontent.com/16631356/29845200-a77c9772-8d1a-11e7-9ae4-00acec06301a.png" class="pull-left youtube"></img><span class="pull-right">Youtube</span></a>
+          <a id="YoutubeLink" type="button" class="btn btn-primary chrome-btn youtube-link"><img src="https://user-images.githubusercontent.com/16631356/29845200-a77c9772-8d1a-11e7-9ae4-00acec06301a.png" class="pull-left youtube"></img><span class="pull-right">Youtube</span></a>
 
-          <a type="button" class="btn btn-primary chrome-btn facebook-link"><img src="https://user-images.githubusercontent.com/16631356/29844402-d3cbb860-8d17-11e7-8378-5eb7d54db10c.png" class="pull-left"></img><span class="pull-right">Facebook</span></a>
+          <a id="FacebookLink" type="button" class="btn btn-primary chrome-btn facebook-link"><img src="https://user-images.githubusercontent.com/16631356/29844402-d3cbb860-8d17-11e7-8378-5eb7d54db10c.png" class="pull-left"></img><span class="pull-right">Facebook</span></a>
 
-         <a type="button" class="btn btn-primary chrome-btn linkedin-link"><img src="https://user-images.githubusercontent.com/16631356/29844592-7ed1eaea-8d18-11e7-970c-05f019399012.png" class="pull-left"></img><span class="pull-right">Linkedin</span></a>
+         <a id="LinkedIn" type="button" class="btn btn-primary chrome-btn linkedin-link"><img src="https://user-images.githubusercontent.com/16631356/29844592-7ed1eaea-8d18-11e7-970c-05f019399012.png" class="pull-left"></img><span class="pull-right">Linkedin</span></a>
 
-         <a type="button" class="btn btn-primary chrome-btn twitter-link"><img src="https://user-images.githubusercontent.com/16631356/29996985-66519960-9011-11e7-96c1-df1235f179c5.png" class="pull-left"></img><span class="pull-right">Twitter</span></a>
+         <a id="TwitterLink" type="button" class="btn btn-primary chrome-btn twitter-link"><img src="https://user-images.githubusercontent.com/16631356/29996985-66519960-9011-11e7-96c1-df1235f179c5.png" class="pull-left"></img><span class="pull-right">Twitter</span></a>
 
         </div>
 
@@ -132,7 +132,7 @@
            </div>
 
            <div class="content">
-             <h2 id="newFeed" class="news"><a href="#" target="_blank" id="news"></a></h2>
+             <h2 id="newFeed" class="news"><a id="news"></a></h2>
              <h6 id="apiHeaderElement">
                <span id="newsAuthor" class="author">
                  <span id="site"></span></span><span class="slash"> / </span><span id="authorApi"></span>
@@ -140,9 +140,9 @@
                  <a class="dropdown-toggle" data-toggle="dropdown">
                    <i class="fa fa-share-alt"></i> Share</a>
                    <ul class="dropdown-menu">
-                       <li><a id="tweet"><button class="btn btn-default"><i id="tweet" class="fa fa-twitter"></i>Twitter</button></a></li>
-                       <li><a id="facebook"><button class="btn btn-default"><i class="fa fa-facebook"></i>Facebook</button></a></li>
-                       <li><a id="linkedin"><button class="btn btn-default"><i class="fa fa-linkedin"></i>Linkedin</button></a></li>
+                       <li><a id="tweet"><button id="ShareTwitter" class="btn btn-default"><i id="tweet" class="fa fa-twitter"></i>Twitter</button></a></li>
+                       <li><a id="facebook"><button id="ShareFacebook" class="btn btn-default"><i class="fa fa-facebook"></i>Facebook</button></a></li>
+                       <li><a id="linkedin"><button id="ShareLinkedin" class="btn btn-default"><i class="fa fa-linkedin"></i>Linkedin</button></a></li>
                    </ul>
                </span>
 
@@ -171,12 +171,12 @@
         <div class="bottom">
           <div class="container-fluid inner">
             <div class="col-md-4 col-xs-4">
-              <h6>News by <a href="https://newsapi.org/" target="_blank">NewsAPI</a></h6>
+              <h6>News by <a id="NewsApiWebsite" href="https://newsapi.org/" target="_blank">NewsAPI</a></h6>
             </div>
             <div class="footer-api col-md-8 col-xs-8">
               <div class="api-row pull-right">
-                <span><i id="Option" class="fa fa-cog" title="Options"></i></span>
-                <span id="Note"><i class="fa fa-pencil-square-o" title="Note Taker"></i></span>
+                <span id="Settings"><i id="Option" class="fa fa-cog" title="Options"></i></span>
+                <span id="Note"><i id="NoteTaker" class="fa fa-pencil-square-o" title="Note Taker"></i></span>
                 <span><i id="Todo" class="fa fa-th-list" title="Todo List"></i></span>
               </div>
             </div>
@@ -189,6 +189,7 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/tracking.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/moment.min.js"></script>
     <script src="./js/twitter-widgets.js"></script>
@@ -207,7 +208,7 @@
     <!-- Bootstrap JS local fallback -->
     <!--<script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./js/bootstrap.min.js"><\/script>')}</script>-->
 
-    <!-- Bootstrap CSS Test and local fallback if Bootstrap fails 
+    <!-- Bootstrap CSS Test and local fallback if Bootstrap fails
     <div id="bootstrapCssTest" class="hidden"> <i class="fa fa-heart"></i></div>
     <script>
      $(function() {
