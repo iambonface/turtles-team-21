@@ -7,8 +7,9 @@ tabyetu
 
 <h4 align="center">A minimalistic New Tab Extension to keep you informed!</h4>
 
-
+<p align="center">
 <img src = "project-img.gif" alt = "tabyetu showcase" width = "800" height = "auto">
+</p>
 
 ## Key Features
 + 7-day weather forecast
@@ -19,7 +20,7 @@ tabyetu
 + CNN news headlines
 
 ## Download
-The latest version of tabyetu for Windows, Linux and MacOS is downloadable from chrome Web Store
+The latest version of tabyetu for Windows, Linux and macOS is downloadable from chrome Web Store
 
 ## How To Install
 See installing chrome extensions at this [link](https://support.google.com/chrome_webstore/answer/2664769?hl=en).
