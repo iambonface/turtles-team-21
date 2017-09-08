@@ -8,9 +8,6 @@ tabyetu
 <h4 align="center">A minimalistic New Tab Extension to keep you informed!</h4>
 
 <p align="center">
-<a href="http://hits.dwyl.com/iambonface/turtles-team-21">
-    <img src="http://hits.dwyl.com/iambonface/turtles-team-21.svg" alt="HitCount">
-</a>
 <a href="http://www.tabyetu.com">
   <img src="https://img.shields.io/badge/website-tabyetu-blue.svg" alt="Website">
 </a>
