@@ -6,6 +6,10 @@ tabyetu
 </h1>
 
 <h4 align="center">A minimalistic New Tab Extension to keep you informed!</h4>
+<p align="center">
+[![HitCount](http://hits.dwyl.io/iambonface/turtles-team-21.svg)](http://hits.dwyl.io/iambonface/turtles-team-21)
+
+</p>
 
 <p align="center">
 <img src = "project-img.gif" alt = "tabyetu showcase" width = "800" height = "auto">
