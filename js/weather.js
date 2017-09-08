@@ -9,13 +9,13 @@ $.getJSON('https://ipinfo.io/geo', function(response) {
     };
     lat = coords.latitude;
     long = coords.longitude;
-    console.log(lat , long );
+    //console.log(lat , long );
     var apidata ='https://api.openweathermap.org/data/2.5/forecast/daily?lat='+ lat +'&lon='+ long +'&cnt=7&units=metric&appid=86bbfdf2b6955b939ff05c17e5c28862';
 
     fetch (apidata)
     .then(blob => blob.json())
     .then(function(data){
-     console.log(data);
+     //console.log(data);
      // forecast location
      var location = document.querySelector('#weatherLocation');
      location.textContent = data.city.name;
@@ -94,8 +94,8 @@ today.textContent = date +' '+ months[month]+', '+year;
    let dayID = '#day'+i;
    let increment = (day + i)% days.length;
    if(increment !== day){
-     console.log(increment);
-     console.log(dayID);
+     //console.log(increment);
+     //console.log(dayID);
      let newDayID = document.querySelector(dayID);
      newDayID.textContent = days[increment];
    }
