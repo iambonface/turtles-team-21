@@ -14,7 +14,7 @@ tabyetu
 </p>
 
 <p align="center">
-<img src = "project-img.gif" alt = "tabyetu showcase" width = "800" height = "auto">
+<img src = "https://user-images.githubusercontent.com/16631356/30233408-1fcd83ae-94fe-11e7-86f9-b096ed9896f0.gif" alt = "tabyetu showcase" width = "800" height = "auto">
 </p>
 
 ## Key Features
