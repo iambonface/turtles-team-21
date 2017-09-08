@@ -8,7 +8,7 @@ tabyetu
 <h4 align="center">A minimalistic New Tab Extension to keep you informed!</h4>
 
 
-<img src = "project-img.gif" alt = "tabyetu showcase" width = "1200" height = "auto">
+<img src = "project-img.gif" alt = "tabyetu showcase" width = "800" height = "auto">
 
 ## Key Features
 + 7-day weather forecast
