@@ -9,7 +9,7 @@ tabyetu
 
 <p align="center">
 <a href="http://www.tabyetu.com">
-  <img src="https://img.shields.io/badge/website-tabyetu-blue.svg" alt="Website">
+  <img src="https://img.shields.io/badge/website-tabyetu.com-blue.svg" alt="Website">
 </a>
 <!--[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/bmeodfbeebedjmiblfbmojnpmhopkdli.svg)]()-->
 <!--[![Chrome Web Store](https://img.shields.io/chrome-web-store/price/bmeodfbeebedjmiblfbmojnpmhopkdli.svg)]()-->
