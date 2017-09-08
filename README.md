@@ -3,12 +3,12 @@
 <img src = "128x128.png" alt = "tabyetu logo" width = "300" height = "300">
 
 
-<h1>A minimalistic New Tab extension to keep you informed as you work on your daily business</h1>
+<h4>A minimalistic New Tab extension to keep you informed as you work on your daily business</h4>
 
 <img src = "project-img.gif" alt = "tabyetu showcase" width = "1200" height = "auto">
 </p>
-## Key Features
 
+## Key Features
 + 7-day weather forecast
 + Notetaker
 + Todo list
