@@ -11,8 +11,6 @@ tabyetu
 <a href="http://www.tabyetu.com">
   <img src="https://img.shields.io/badge/website-tabyetu.com-blue.svg" alt="Website">
 </a>
-<!--[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/bmeodfbeebedjmiblfbmojnpmhopkdli.svg)]()-->
-<!--[![Chrome Web Store](https://img.shields.io/chrome-web-store/price/bmeodfbeebedjmiblfbmojnpmhopkdli.svg)]()-->
 </p>
 
 <p align="center">
