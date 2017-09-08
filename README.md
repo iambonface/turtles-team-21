@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src = "128x128.png" alt = "tabyetu logo" width = "300" height = "300">
+<img src = "128x128.png" alt = "tabyetu logo" width = "150" height = "150">
 <br>
 tabyetu
 <br>
