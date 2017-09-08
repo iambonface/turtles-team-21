@@ -7,9 +7,8 @@ tabyetu
 
 <h4 align="center">A minimalistic New Tab Extension to keep you informed!</h4>
 <p align="center">
-
 [![HitCount](http://hits.dwyl.com/iambonface/turtles-team-21.svg)](http://hits.dwyl.com/iambonface/turtles-team-21)
-
+[https://img.shields.io/badge/website-tabyetu-blue.svg)](http://www.tabyetu.com)
 </p>
 
 <p align="center">
