@@ -1,20 +1,27 @@
-# turtles-team-21
+<h1 align="center">
+<img src = "128x128.png" alt = "tabyetu logo" width = "150" height = "150">
+<br>
+tabyetu
+<br>
+</h1>
 
-# tabyetu
-<img src = "128x128.png" alt = "tabyetu logo" width = "300" height = "300">
+<h4 align="center">A minimalistic New Tab Extension to keep you informed!</h4>
 
+<p align="center">
+<a href="http://www.tabyetu.com">
+  <img src="https://img.shields.io/badge/website-tabyetu.com-blue.svg" alt="Website">
+</a>
+</p>
 
-
-tabyetu is a new tab extension for chrome featuring a high resolution background video, dynamic links and 24/7 weather forecasts.
-
-<img src = "project-img.gif" alt = "tabyetu showcase" width = "1200" height = "auto">
+<p align="center">
+<img src = "project-img.gif" alt = "tabyetu showcase" width = "800" height = "auto">
+</p>
 
 ## Key Features
-
 + 7-day weather forecast
 + Notetaker
 + Todo list
-+ Background video
++ High resolution background video
 + Social media and dynamic links
 + CNN news headlines
 
@@ -26,6 +33,10 @@ See installing chrome extensions at this [link](https://support.google.com/chrom
 
 ## Contributors
 
+Anye Fon .  Twitter:[@anye_sos](https://twitter.com/anye_sos), Medium:[@anyesocrates](https://medium.com/@anyesocrates)
+
 Bonface Mudiri . Twitter:[@iambonface](https://twitter.com/iambonface), Medium: [@iambonface](https://medium.com/@iambonface)
 
-Anye Fon .  Twitter:[@anye_sos](https://twitter.com/anye_sos), Medium:[@anyesocrates](https://medium.com/@anyesocrates)
+
+## Special Thanks
+We appreciate the opportunity by [Chance Taken](https://medium.com/@tropicalchancer) and the great [Chingu ](https://chingu-cohorts.github.io/chingu-directory/) community
