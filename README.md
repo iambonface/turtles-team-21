@@ -10,7 +10,7 @@ tabyetu
 
 [![HitCount](http://hits.dwyl.com/iambonface/turtles-team-21.svg)](http://hits.dwyl.com/iambonface/turtles-team-21)
 
-[https://img.shields.io/badge/website-tabyetu-blue.svg)](http://www.tabyetu.com)
+[https://img.shields.io/badge/website-tabyetu-blue.svg](http://www.tabyetu.com)
 
 </p>
 
