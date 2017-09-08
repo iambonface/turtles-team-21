@@ -1,12 +1,14 @@
-# tabyetu
-<p align="center">
+<h1 align="center">
 <img src = "128x128.png" alt = "tabyetu logo" width = "300" height = "300">
+<br>
+tabyetu
+<br>
+</h1>
 
+<h4 align="center">A minimalistic New Tab Extension to keep you informed!</h4>
 
-<h4>A minimalistic New Tab extension to keep you informed as you work on your daily business</h4>
 
 <img src = "project-img.gif" alt = "tabyetu showcase" width = "1200" height = "auto">
-</p>
 
 ## Key Features
 + 7-day weather forecast
