@@ -29,7 +29,7 @@ tabyetu
 The latest version of tabyetu for Windows, Linux and macOS is downloadable from chrome Web Store
 
 ## How To Install
-See installing chrome extensions at this [link](https://support.google.com/chrome_webstore/answer/2664769?hl=en).
+See installing the tabyetu chrome extensions at this [link](https://goo.gl/87tAyt).
 
 ## Contributors
 
