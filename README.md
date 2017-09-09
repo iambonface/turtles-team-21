@@ -11,6 +11,12 @@ tabyetu
 <a href="http://www.tabyetu.com">
   <img src="https://img.shields.io/badge/website-tabyetu.com-blue.svg" alt="Website">
 </a>
+<a href="https://goo.gl/87tAyt">
+  <img src="https://img.shields.io/badge/install-tabyetu-brightgreen.svg" alt="Website">
+</a>
+<a href="http://www.twitter.com/tabyetu">
+  <img src="https://img.shields.io/badge/follow-tabyetu-blue.svg" alt="Website">
+</a>
 </p>
 
 <p align="center">
@@ -29,7 +35,7 @@ tabyetu
 The latest version of tabyetu for Windows, Linux and macOS is downloadable from chrome Web Store
 
 ## How To Install
-See installing the tabyetu chrome extensions at this [link](https://goo.gl/87tAyt).
+See installing the tabyetu chrome extension at this [link](https://goo.gl/87tAyt).
 
 ## Contributors
 
