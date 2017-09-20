@@ -27,6 +27,7 @@ $('.wrapper').click(function(){
   if ( $('#MenuButtonBox').is(':visible')){
       $('#MenuButtonBox').slideUp();
     }
+    
 });
 
 
