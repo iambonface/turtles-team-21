@@ -35,14 +35,29 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body oncontextmenu="return false">
     <!-- APP Content starts here-->
     <div class="container-fluid viewport">
 
       <!-- Left Menu Buton and Links -->
-        <a class="menu-button">
-            <span id="Menu" class="glyphicon glyphicon-th"></span>
+          <a class="menu-button">
+            <span id="Menu" class="menu-bar">
+              <div class="pull-left">
+                <div class="bar bar-left"></div>
+                <div class="bar bar-left"></div>
+                <div class="bar bar-left"></div>
+                <div class="bar bar-left"></div>
+              </div>
+
+              <div class="pull-left">
+                <div class="bar bar-left bar-right"></div>
+                <div class="bar bar-left bar-right"></div>
+                <div class="bar bar-left bar-right"></div>
+                <div class="bar bar-left bar-right"></div>
+              </div>
+            </span>
         </a>
+        <!--<div class="brand"><span style="color: white">tab</span>yetu</div>-->
 
         <div id="MenuButtonBox" class="btn-group-vertical" style="z-index: 10;">
           <a id="Applications" type="button" class="btn btn-primary chrome-btn tab" href="chrome://apps"><i class="fa fa-th-large pull-left"></i><span class="pull-right">Applications</span></a>
@@ -65,7 +80,8 @@
 
         </div>
 
-      <div class="flex-container">
+      <div class="wrapper">
+        <div class="flex-container">
       <!-- Video Button-->
       <div class="toggle">
           <label class="switch">
@@ -182,6 +198,8 @@
             </div>
           </div>
         </div>
+
+      </div>
 
     </div><!-- APP Content ends here-->
 

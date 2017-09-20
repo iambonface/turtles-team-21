@@ -14,7 +14,8 @@ $(document).ready(function(){
       $('#Note').attr('data-click-state', 1)
       $("#NoteBox").slideDown();
     }
-  })
+  });
+
 
   //Save data automatically to localStorage while user is typing. Set delay is 1 second
   var timeout;
