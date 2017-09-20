@@ -3,18 +3,16 @@ $(document).ready(function(){
   getQuickLinks() //get the links to auto display upon page reload
   //console.log(JSON.stringify(linkList))
 
-  $("#MenuButtonBox").css("display", "none");
-  $('#Menu').attr('data-click-state', 1)
+$('#Menu').click(function(){
+  $('#MenuButtonBox').delay(100).slideDown(function(){});
+});
 
-  $('#Menu').click(function(){
-    if($('#Menu').attr('data-click-state') == 1){
-      $('#Menu').attr('data-click-state', 0)
-      $("#MenuButtonBox").slideDown();
-    } else {
-      $('#Menu').attr('data-click-state', 1)
-      $("#MenuButtonBox").slideUp();
+$('html').click(function(){
+  if ( $('#MenuButtonBox').is(':visible')){
+    $('#MenuButtonBox').slideUp();
     }
-  })
+});
+
 
    $('body').on('click', '.tab', function(){
       chrome.tabs.create({url: $(this).attr('href')});
