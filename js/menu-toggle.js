@@ -9,19 +9,29 @@ $(".menu-bar").hover(function(){
     $(".bar").removeClass("transition");
 });
 
+$('#Menu').attr('data-click-state', 1)
 
 $('#Menu').click(function(){
-  $('#MenuButtonBox').delay(100).slideDown(function(){});
-});
+  if($('#Menu').attr('data-click-state') == 1){
+    $('#Menu').attr('data-click-state', 0)
+    $('#MenuButtonBox').delay(100).slideDown(function(){
+    }); 
+  } else {
+      $('#Menu').attr('data-click-state', 1)
+      $("#MenuButtonBox").slideUp();
+    }
+  });
 
-$('.main').click(function(){
+$('.wrapper').click(function(){
+    $('#Menu').attr('data-click-state', 1)
   if ( $('#MenuButtonBox').is(':visible')){
-    $('#MenuButtonBox').slideUp();
+      $('#MenuButtonBox').slideUp();
     }
 });
 
 
-   $('body').on('click', '.tab', function(){
+
+  $('body').on('click', '.tab', function(){
       chrome.tabs.create({url: $(this).attr('href')});
       return false;
     });
