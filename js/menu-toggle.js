@@ -3,11 +3,18 @@ $(document).ready(function(){
   getQuickLinks() //get the links to auto display upon page reload
   //console.log(JSON.stringify(linkList))
 
+$(".menu-bar").hover(function(){
+    $(".bar").addClass("transition");
+  }, function(){
+    $(".bar").removeClass("transition");
+});
+
+
 $('#Menu').click(function(){
   $('#MenuButtonBox').delay(100).slideDown(function(){});
 });
 
-$('html').click(function(){
+$('.main').click(function(){
   if ( $('#MenuButtonBox').is(':visible')){
     $('#MenuButtonBox').slideUp();
     }
