@@ -29,6 +29,11 @@ $(document).ready(function(){
             var newTabUrl = window.open(url);
             newTabUrl.focus();
           });
+
+          $("#ReadMore").click(function(){
+            var newTabUrl = window.open(url);
+            newTabUrl.focus();
+          })
           if(author == null){
             $("#site").css({"display": "none"});
             $(".slash").css({"display": "none"})
@@ -60,7 +65,7 @@ $(document).ready(function(){
     }
     //makes live update without reloading/refreshing browser
     setInterval(timeDisplay, 1000);
-    
+
     $("#dateDisplay").html("Today is "+ moment().format("MMM Do YYYY"))
 
 });

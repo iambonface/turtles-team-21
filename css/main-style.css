@@ -327,6 +327,11 @@ a:hover{
   color: #ffff00;
 }
 
+#ReadMore:hover{
+  background: #00b3db;
+  color: rgb(255, 255, 255);
+  border-color: rgb(40, 94, 142);
+}
 .main .btn{
   padding: 2px 5px 2px 5px;
   line-height: normal;
