@@ -19,7 +19,7 @@ $(document).ready(function(){
           var articles = value.articles;
           var source = value.source
 
-          for(var i in articles ){
+           for(var i in articles ){
             //Loop through all articles and display random news item
             var random = (Math.random() * value.length | Math.random() * articles.length)
             var news = articles[random].title;
@@ -33,6 +33,8 @@ $(document).ready(function(){
             var newTabUrl = window.open(url);
             newTabUrl.focus();
           });
+
+          $("#Char").html(source.charAt(0).toUpperCase()) //get first char of source string
           
           $("#Source").html(source)
          

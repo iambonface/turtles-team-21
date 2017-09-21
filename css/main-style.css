@@ -5,7 +5,9 @@ version 1.0
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
-.viewport{
+
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+ .viewport{
   height: 100vh;
 }
 
@@ -697,7 +699,14 @@ img#QuickLink:hover{
   border-bottom: 2px solid white;
   width: 60px;
 }
-
+#dateDisplay{
+  color: rgb(0, 0, 0)
+}
+#Char{
+  font-size: 200px;
+  color: grey;
+  font-family: 'Allerta Stencil', sans-serif;
+}
 
 /*---MEDIA QUERIES -----*/
 /* Galaxy S5 */
