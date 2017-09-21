@@ -35,7 +35,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body oncontextmenu="return false">
+  <body>
     <!-- APP Content starts here-->
     <div class="container-fluid viewport">
 
@@ -141,14 +141,21 @@
   </div>
 
         <div class="main">
+               <div class="teaser">
+                  <div class="line"></div>
+                  <span id="NewsTeaser">What <span id="Source"></span> says</span>
+                </div>
+            <div class="random-image-container col-md-12 col-sm-12 col-xs-12">
+               <img id="RandomImage" class="text-center img-responsive" src="" alt="" />
+            </div>
            <!-- Main Body Goes Here-->
-           <div class="timer">
+           <div class="timer pull-right">
              <!-- Display time -->
               <h2 id="timeDisplay" class="inner-timer"></h2>
               <h4 id="dateDisplay" class="inner-date text-center"></h4>
            </div>
 
-           <div class="content">
+           <div class="content text-center">
              <h2 id="newFeed" class="news"><a id="news"></a></h2>
              <h6 id="apiHeaderElement">
                <span id="newsAuthor" class="author">

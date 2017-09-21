@@ -17,18 +17,27 @@ $(document).ready(function(){
       success: function(news){
         $(news).each(function(index, value){
           var articles = value.articles;
+          var source = value.source
+
           for(var i in articles ){
             //Loop through all articles and display random news item
             var random = (Math.random() * value.length | Math.random() * articles.length)
             var news = articles[random].title;
             var author = articles[random].author;
             var url = articles[random].url;
+            var image = articles[random].urlToImage;
           }
           $("#news").html(news);
+
           $("#news").click(function(){
             var newTabUrl = window.open(url);
             newTabUrl.focus();
           });
+          
+          $("#Source").html(source)
+         
+          $("#RandomImage").attr("src", image)
+
 
           $("#ReadMore").click(function(){
             var newTabUrl = window.open(url);

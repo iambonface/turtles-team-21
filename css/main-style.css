@@ -283,6 +283,7 @@ a:hover{
   margin-left: 50%;
   transform: translateX(-50%);
   font-family: 'Orbitron', sans-serif;
+
 }
 .inner-timer{
   font-size: 50px;
@@ -330,7 +331,7 @@ a:hover{
 #ReadMore:hover{
   background: #00b3db;
   color: rgb(255, 255, 255);
-  border-color: rgb(40, 94, 142);
+  border-color: rgb(0,0,0);
 }
 .main .btn{
   padding: 2px 5px 2px 5px;
@@ -672,7 +673,30 @@ img#QuickLink:hover{
   z-index: 100;
 }
 
+#RandomImage{
+  height:40vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin-top: 10px;
 
+}
+.random-image-container{
+  box-shadow: rgba(0, 0, 0, 0.17) 0px 14px 24px 0px;
+  padding: 5px;
+}
+
+#NewsTeaser{
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+.teaser{
+  margin: 90px 0px 10px 20px;
+}
+.line{
+  border-bottom: 2px solid white;
+  width: 60px;
+}
 
 
 /*---MEDIA QUERIES -----*/
