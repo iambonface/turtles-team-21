@@ -278,7 +278,7 @@ a:hover{
 }
 .timer{
   position: absolute;
-  top: 25%;
+  top: 20%;
   transform: translateY(-50%);
   margin-left: 50%;
   transform: translateX(-50%);
@@ -296,7 +296,7 @@ a:hover{
 }
 .content{
   position: absolute;
-  top: 35%;
+  top: 55%;
   transform: translateY(-50%);
   margin-left: 50%;
   transform: translateX(-50%);
@@ -470,9 +470,9 @@ textarea{
   color: rgb(255, 255, 255);
   text-align: center;
   line-height: 50px;
-  font-size": 14px;
-  font-family": sans-serif;
-  font-weight": bold;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 #displayInnerStatus{
   line-height: 50px;

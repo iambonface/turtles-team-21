@@ -60,5 +60,7 @@ $(document).ready(function(){
     }
     //makes live update without reloading/refreshing browser
     setInterval(timeDisplay, 1000);
+    
+    $("#dateDisplay").html("Today is "+ moment().format("MMM Do YYYY"))
 
 });
