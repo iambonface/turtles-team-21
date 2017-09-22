@@ -299,7 +299,7 @@ a:hover{
 }
 .content{
   position: absolute;
-  top: 55%;
+  top: 70%;
   transform: translateY(-50%);
   margin-left: 50%;
   transform: translateX(-50%);
