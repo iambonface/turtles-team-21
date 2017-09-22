@@ -285,12 +285,14 @@ a:hover{
   margin-left: 50%;
   transform: translateX(-50%);
   font-family: 'Orbitron', sans-serif;
+  right: 0;
+  margin-right: 25px;
 
 }
 .inner-timer{
   font-size: 50px;
   font-weight: bold;
-  color: #000;
+  color: yellow;
 }
 .date{
   font-size: 25px;
@@ -702,7 +704,7 @@ img#QuickLink:hover{
   width: 60px;
 }
 #dateDisplay{
-  color: rgb(0, 0, 0)
+  color: rgb(0, 0, 0);
 }
 #Char{
   font-size: 200px;
