@@ -5,7 +5,9 @@ version 1.0
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
-.viewport{
+
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
+ .viewport{
   height: 100vh;
 }
 
@@ -278,11 +280,12 @@ a:hover{
 }
 .timer{
   position: absolute;
-  top: 25%;
+  top: 20%;
   transform: translateY(-50%);
   margin-left: 50%;
   transform: translateX(-50%);
   font-family: 'Orbitron', sans-serif;
+
 }
 .inner-timer{
   font-size: 50px;
@@ -296,14 +299,14 @@ a:hover{
 }
 .content{
   position: absolute;
-  top: 35%;
+  top: 68%;
   transform: translateY(-50%);
   margin-left: 50%;
   transform: translateX(-50%);
   text-align: center;
 }
 .content h2{
-  font-size: 45px;
+  font-size: 40px;
   color: #fff;
   font-family: 'Playfair Display', serif;
 }
@@ -326,7 +329,14 @@ a:hover{
 .content a:hover{
   color: #ffff00;
 }
-
+.dropdown-menu{
+  z-index: 20;
+}
+#ReadMore:hover{
+  background: #00b3db;
+  color: rgb(255, 255, 255);
+  border-color: rgb(0,0,0);
+}
 .main .btn{
   padding: 2px 5px 2px 5px;
   line-height: normal;
@@ -470,9 +480,9 @@ textarea{
   color: rgb(255, 255, 255);
   text-align: center;
   line-height: 50px;
-  font-size": 14px;
-  font-family": sans-serif;
-  font-weight": bold;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 #displayInnerStatus{
   line-height: 50px;
@@ -667,8 +677,38 @@ img#QuickLink:hover{
   z-index: 100;
 }
 
+#RandomImage{
+  height:40vh;
+  background-repeat:no-repeat;
+  background-size:cover;
+  margin-top: 5px;
 
+}
+.random-image-container{
+  box-shadow: rgba(0, 0, 0, 0.17) 0px 14px 24px 0px;
+  padding: 5px;
+}
 
+#NewsTeaser{
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+.teaser{
+  margin: 90px 0px 10px 20px;
+}
+.line{
+  border-bottom: 2px solid white;
+  width: 60px;
+}
+#dateDisplay{
+  color: rgb(0, 0, 0)
+}
+#Char{
+  font-size: 200px;
+  color: grey;
+  font-family: 'Allerta Stencil', sans-serif;
+}
 
 /*---MEDIA QUERIES -----*/
 /* Galaxy S5 */
