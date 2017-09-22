@@ -299,7 +299,7 @@ a:hover{
 }
 .content{
   position: absolute;
-  top: 69%;
+  top: 70%;
   transform: translateY(-50%);
   margin-left: 50%;
   transform: translateX(-50%);
@@ -330,7 +330,7 @@ a:hover{
   color: #ffff00;
 }
 .dropdown-menu{
-  z-index: 20;
+  z-index: 50;
 }
 #ReadMore:hover{
   background: #00b3db;
