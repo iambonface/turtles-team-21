@@ -712,6 +712,74 @@ img#QuickLink:hover{
   font-family: 'Allerta Stencil', sans-serif;
 }
 
+/*Geolocation style */
+@font-face {
+    font-family: 'weather';
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/font/weathericons-regular-webfont.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.woff') format('woff'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.ttf') format('truetype'),
+         url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/93/artill_clean_icons-webfont.svg#artill_clean_weather_iconsRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#weather{
+  color: rgb(255, 255, 255);
+}
+.alt-temp{
+  background-color: grey;
+  padding: 0px 8px 0 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.temp{
+  background-color: lightsalmon;
+  padding: 0px 8px 0 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.weather-container{
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+ #SetLocation {
+  display: inline;
+  margin: 10px auto;
+  padding: 5px;
+  background: yellow;
+  color: rgb(0,0,0);
+  border: 0;
+  border-radius: 5px;
+}
+
+.wi {
+  color: #fff;
+  font-family: weather;
+  font-size: 30px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+  margin-right: 2px;
+}
+
+#GetLocation input[type="checkbox"]{
+  width:15px;
+  height:15px;
+  z-index: 1;
+}
+
+#GetLocation{
+  cursor: pointer; 
+  color: rgb(255, 255, 255);
+}
+
+.location{
+  border: 1px dotted silver;
+}
+.location:hover{
+  background: #3b5998;
+}
+
 /*---MEDIA QUERIES -----*/
 /* Galaxy S5 */
 @media only screen

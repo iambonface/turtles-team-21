@@ -27,6 +27,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.css" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -91,12 +92,24 @@
       </div>
       <!-- Weather Forecast Container-->
       <div class="dropdown-wrapper weather-container">
-          <a class="menu-button">
+          <div id="weather"></div>
+          <div type="button" class="location text-center"><div class="form-check">
+            <label class="form-check-label" id="GetLocation">
+                <input class="form-check-input" type="checkbox" name="get-location" data-waschecked="false" value="">
+              Set location for accuracy
+            </label>
+          </div></div>
+          <!--<span><button 
+          id="SetLocation" 
+          class="geolocation text-center" 
+          style="display:none;"></button>Increase Accuracy</span>-->
+
+         <!-- <a class="menu-button">
               <p><i aria-hidden="true" id="day0Icon"></i> <span id="day0Temp"></span><button type="button" class="btn btn-info" id="changeTempUnits"> &#8457</button></p>
               <p><span id="weatherLocation"></span></p>
-          </a>
+          </a>-->
 
-      <div class="drop-menu">
+      <!--<div class="drop-menu">
           <h4 class="menu-button">Weather Forecast</h4>
           <p id="currentDate" class="menu-button">30 July, 2017</p>
 
@@ -135,8 +148,8 @@
 
           </div>
 
-      </div>
-  </div>
+      </div> --> <!-- endropdown -->
+  </div> <!-- end weather-container -->
 
   </div>
 
@@ -223,12 +236,14 @@
     <script src="./js/moment.min.js"></script>
     <script src="./js/twitter-widgets.js"></script>
     <script src="./js/sweetalert.min.js"></script>
+    <script src="./js/jquery.simpleWeather.js"></script>
     <!-- ALL INDIVIDUAL JS FILES (BELOW) -->
     <script src="js/weather.js"></script>
     <script src="./js/news-api.js"></script>
     <script src="./js/local-storage.js"></script>
     <script src="./js/menu-toggle.js"></script>
     <script src="./js/random-media.js"></script>
+    <script src="./js/simple-weather.js"></script>
 
     <!-- Latest compiled and minified Bootstrap-->
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
